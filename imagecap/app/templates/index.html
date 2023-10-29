@@ -1,0 +1,10 @@
+{% block content %}
+<html>
+    <body>
+        {% for p in post %}
+        <img src = '{{p.image.url}}' height="300" width="400"/>
+        <p>{{p.title}}</p>
+        {% endfor %}
+    </body>
+</html>
+{% endblock %}
